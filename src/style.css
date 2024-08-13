@@ -1,0 +1,67 @@
+@font-face {
+	font-family: "Jacquard12";
+	src: url(/src/Jacquard12-Regular.ttf) format("truetype");
+}
+@font-face {
+	font-family: "Jaro";
+	src: url(/src/Jaro-Regular.ttf) format("truetype");
+}
+body {
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("~/src/background.jpg");
+	background-size: cover;
+}
+.tab {
+	padding: 15px 20px;
+	background-color: rgb(142, 108, 162);
+}
+.tab:hover {
+	background-color: rgb(98, 65, 115);
+}
+.box {
+	background-color: bisque;
+	padding: 20px;
+	margin: 25px;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 5px 5px rgba(60, 41, 107, 0.673);
+}
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 25px;
+	margin: 20px;
+	width: 750px;
+	background-color: rgba(133, 171, 215, 0.5);
+	border-radius: 10px;
+}
+#navigation {
+	display: flex;
+	gap: 10px;
+	background-color: rgb(204, 130, 199);
+	justify-content: center;
+	width: 100vw;
+	color: rgb(35, 30, 40);
+	font-family: "Jaro";
+}
+.title {
+	font-weight: bold;
+	font-size: large;
+}
+@media only screen and (max-width: 768px) {
+	body {
+		background-size: contain;
+	}
+	#content {
+		width: 80%;
+	}
+	.box {
+		width: 95%;
+	}
+}

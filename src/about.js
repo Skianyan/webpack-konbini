@@ -16,6 +16,10 @@ export function displayAbout() {
 			title: "Image credits",
 			text: "Freepik - Chips, pngfre - lighter, pngtree - energy drink, purepng - cookies",
 		},
+		{
+			title: "Background credits",
+			text: "Photo by Ethan Cull on Unsplash",
+		},
 	];
 
 	boxContents.forEach((box) => {
